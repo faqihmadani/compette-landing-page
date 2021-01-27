@@ -8,8 +8,8 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
-<body class=" bg-white font-Asap">
-    <header class="text-gray-600 body-font bg-myGreen relative" x-data="{isOpen : false}">
+<body class=" bg-white text-myBlack font-Asap">
+    <header class="text-gray-600 body-font bg-myGreen fixed w-full shadow-lg z-50" x-data="{isOpen : false}">
         <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
             <a href="/" class="flex title-font font-medium items-center text-gray-900">
                 <img src="./img/logo.png" alt="Compette">
@@ -25,8 +25,8 @@
                 <a href="/" class="mr-5 text-myGray hover:text-myYellow transition duration-200 border-b border-myGreen hover:border-myYellow">Investor</a>
             </nav>
         </div>
-        <nav class="md:ml-auto flex flex-wrap flex-col uppercase items-center text-base justify-center absolute md:hidden w-screen h-screen bg-myGreen z-50 top-0 space-y-2 font-medium" x-show.transition.duration.400="isOpen">
-            <svg @click="isOpen = false" class="absolute cursor-pointer top-8 right-5 h-6 w-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <nav class="md:ml-auto flex flex-wrap flex-col uppercase items-center text-base justify-center fixed md:hidden w-screen h-screen bg-myGreen z-50 top-0 space-y-2 font-medium" x-show.transition.duration.400="isOpen">
+            <svg @click="isOpen = false" class="absolute cursor-pointer top-7 right-6 h-6 w-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
             <a href="/" class="py-2 px-3 text-myGray hover:text-myYellow transition duration-200">Learn</a>
@@ -37,8 +37,71 @@
         </nav>
     </header>
     <div>
-        <h2 class=" text-4xl text-blue-500">My Super Awesome Cat Blog</h2>
-List of posts here, newest first.
+        
+<!--* Hero Section -->
+<section class="body-font relative">
+    <img class="min-h-screen w-full lg:min-h-0 object-cover absolute z-0" src="./img/bg.png" alt="background">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col transform z-20">
+        <div class="text-center flex flex-col items-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-5xl lg:text-6xl text-4xl font-semibold mt-20 text-white">
+                Build Your Career.
+            </h1>
+            <h1 class="title-font sm:text-5xl lg:text-6xl text-4xl mb-6 font-semibold mt-3 text-white">
+                Grow Together & Faster.
+            </h1>
+        
+            <button
+                class="inline-flex text-myGold bg-myYellow border-0 py-3 px-10 focus:outline-none rounded-full text-lg">
+                Explore Mine
+            </button>
+            <img class=" transform scale-75 mt-14 lg:scale-90" src="./img/illustration.png" alt="Build your career">
+            <div
+                class="flex space-y-7 md:space-y-0 scale-75 sm:scale-90 md:scale-100 transform flex-col md:flex-row justify-center items-center md:space-x-7 lg:mt-8">
+                <img class="inline" src="./img/facebook.png" alt="facebook">
+                <img class="inline" src="./img/microsoft.png" alt="microsoft">
+                <img class="inline" src="./img/google.png" alt="google">
+                <img class="inline" src="./img/spotify.png" alt="spotify">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- *Help Section -->
+<section class="body-font transform z-10">
+    <div class="container mx-auto flex px-5 py-24 lg:flex-row flex-col items-center">
+        <div class="lg:max-w-lg  mb-10 lg:mb-0">
+            <img class="object-cover object-center rounded" alt="Find a Job" src="./img/gallery.png">
+        </div>
+        <div
+            class="lg:flex-grow lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <p class="title-font text-5xl text-center lg:text-left font-semibold leading-snug">
+                We help best people like you across the world
+            </p>
+            <div class=" flex-col flex space-y-5 mt-6">
+                <div class="flex justify-start items-center">
+                    <img src="./img/green-dot.png" alt="dot">
+                    <p class=" ml-5">Mastering work-life-balance</p>
+                </div>
+                <div class="flex justify-start items-center">
+                    <img src="./img/yellow-dot.png" alt="dot">
+                    <p class=" ml-5">Find the job based on your skills</p>
+                </div>
+                <div class="flex justify-start items-center">
+                    <img src="./img/green-dot.png" alt="dot">
+                    <p class=" ml-5">Helping preparing the paperwork</p>
+                </div>
+                <div class="flex justify-start items-center">
+                    <img src="./img/yellow-dot.png" alt="dot">
+                    <p class=" ml-5">24/7 Best worker support</p>
+                </div>
+                <div class="flex justify-start items-center">
+                    <img src="./img/green-dot.png" alt="dot">
+                    <p class=" ml-5">Trusted payment protection</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </div>
     <script src="/js/index.js"></script>
 </body>

@@ -11,8 +11,8 @@ title: Default title
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
-<body class=" bg-white font-Asap">
-    <header class="text-gray-600 body-font bg-myGreen relative" x-data="{isOpen : false}">
+<body class=" bg-white text-myBlack font-Asap">
+    <header class="text-gray-600 body-font bg-myGreen fixed w-full shadow-lg z-50" x-data="{isOpen : false}">
         <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
             <a href="/" class="flex title-font font-medium items-center text-gray-900">
                 <img src="./img/logo.png" alt="Compette">
@@ -28,8 +28,8 @@ title: Default title
                 <a href="/" class="mr-5 text-myGray hover:text-myYellow transition duration-200 border-b border-myGreen hover:border-myYellow">Investor</a>
             </nav>
         </div>
-        <nav class="md:ml-auto flex flex-wrap flex-col uppercase items-center text-base justify-center absolute md:hidden w-screen h-screen bg-myGreen z-50 top-0 space-y-2 font-medium" x-show.transition.duration.400="isOpen">
-            <svg @click="isOpen = false" class="absolute cursor-pointer top-8 right-5 h-6 w-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <nav class="md:ml-auto flex flex-wrap flex-col uppercase items-center text-base justify-center fixed md:hidden w-screen h-screen bg-myGreen z-50 top-0 space-y-2 font-medium" x-show.transition.duration.400="isOpen">
+            <svg @click="isOpen = false" class="absolute cursor-pointer top-7 right-6 h-6 w-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
             <a href="/" class="py-2 px-3 text-myGray hover:text-myYellow transition duration-200">Learn</a>
