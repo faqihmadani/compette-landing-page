@@ -8,7 +8,8 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
-<body class=" bg-white text-myBlack font-Asap">
+<body class=" bg-myLightGray text-myBlack font-Asap">
+    <!-- *Navbar -->
     <header class="text-gray-600 body-font bg-myGreen fixed w-full shadow-lg z-50" x-data="{isOpen : false}">
         <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
             <a href="/" class="flex title-font font-medium items-center text-gray-900">
@@ -52,6 +53,19 @@
     </ul>
 </div>
     </div>
+
+    <!-- *Subscribtion -->
+    <div class="py-24">
+        <div class="bg-myGreen py-10 w-6/12 mx-auto flex flex-col items-center rounded-lg">
+                <h1 class=" text-white text-center font-medium text-xl">Subscribe New Job</h1>
+                <h2 class=" text-myGray text-center font-medium text-sm mt-2">We promise never send you a spam</h2>
+                <div class="mt-8 w-full px-10 relative flex justify-center">
+                    <input class="font-medium focus:outline-none w-10/12 pl-2 pr-20 py-1 rounded"  placeholder="Type your email address" type="text">
+                    <button class="text-myGold bg-myYellow rounded-full absolute px-3 py-1 right-10">Count Me In</button>
+                </div>
+        </div>
+    </div>
+
     <script src="/js/index.js"></script>
 </body>
 

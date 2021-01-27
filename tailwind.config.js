@@ -11,7 +11,11 @@ module.exports = {
       'myGold':'#986121',
       'myGray':'#B0C3C9',
       'myBlack':'#0F1D37',
-      'white':'#FFFFFF'
+      'white':'#FFFFFF',
+      'myLightGray':'#FAFAFF',
+      'myLightBlue':'#EBFAFC',
+      'myBlue':'#65D9E4',
+      'myMediumGray':'#CACAD2',
     },
     extend: {},
   },
