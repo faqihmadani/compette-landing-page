@@ -10,7 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "css:build": "tailwindcss build ./src/style.css -o ./css/main.css"
+    "css:build": "tailwindcss build ./src/style.css -o ./css/main.css",
+    "css:prod": "NODE_ENV=production tailwindcss build ./src/style.css -o ./css/main.css"
   },
   "keywords": [],
   "author": "",

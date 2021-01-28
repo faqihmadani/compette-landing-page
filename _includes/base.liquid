@@ -7,7 +7,11 @@ title: Default title
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="/css/main.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Alpine JS -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
@@ -46,16 +50,21 @@ title: Default title
 
     <!-- *Subscribtion -->
     <div class="py-24">
-        <div class="bg-myGreen py-10 w-6/12 mx-auto flex flex-col items-center rounded-lg">
-                <h1 class=" text-white text-center font-medium text-xl">Subscribe New Job</h1>
-                <h2 class=" text-myGray text-center font-medium text-sm mt-2">We promise never send you a spam</h2>
-                <div class="mt-8 w-full px-10 relative flex justify-center">
-                    <input class="font-medium focus:outline-none w-10/12 pl-2 pr-20 py-1 rounded"  placeholder="Type your email address" type="text">
-                    <button class="text-myGold bg-myYellow rounded-full absolute px-3 py-1 right-10">Count Me In</button>
+        <div data-aos="fade-up" class="bg-myGreen rounded-lg relative w-10/12 md:w-6/12 mx-auto object-cover shadow-xl">
+                <img class="  object-center w-full h-full absolute" src="./img/subscribe-bg.png" alt="background">
+                <div class="py-10 w-11/12 sm:w-8/12 mx-auto flex flex-col items-center">
+                    <h1 class=" transform z-20 text-white text-center font-medium text-xl">Subscribe New Job</h1>
+                    <h2 class=" transform z-20 text-myGray text-center font-medium text-sm mt-2">We promise never send you a spam</h2>
+                    <div class="mt-8 w-full relative flex flex-col lg:flex-row justify-center items-center space-y-3 lg:space-y-0">
+                        <input class="font-medium focus:outline-none w-11/12 sm:w-full pl-5 pr-5 lg:pr-32 py-2 rounded-lg"  placeholder="Type your email address" type="text">
+                        <button class="text-myGold bg-myYellow rounded-full lg:absolute px-10 py-2 -right-10">Count Me In</button>
+                    </div>
                 </div>
         </div>
     </div>
 
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/index.js"></script>
 </body>
 

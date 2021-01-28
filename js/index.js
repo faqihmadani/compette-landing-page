@@ -1,2 +1,5 @@
-console.log("Halo Guys");
-console.log("Halo Guys 2");
+AOS.init({
+    once: true,
+    duration: 800,
+    delay:400,
+});
